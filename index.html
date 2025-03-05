@@ -1,57 +1,86 @@
+
 <!DOCTYPE html>
 <!-- saved from url=(0086)file:///C:/Users/s1617049/Documents/WebPages/%E7%99%BB%E9%8C%B2%E5%AE%8C%E4%BA%86.html -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>登録完了</title>
-    <link rel="stylesheet" href="bulma.min.css">
+    <link rel="stylesheet" href="./登録完了_files/bulma.min.css">
 <meta name="”viewport”" content="”width=device-width," initial-scale="1.0″">
-<script src="jquery.min.js.ダウンロード"></script>
-    <script src="vue.global.js.ダウンロード"></script>
+<script src="./登録完了_files/jquery.min.js.ダウンロード"></script>
+    <script src="./登録完了_files/vue.global.js.ダウンロード"></script>
   </head>
   <body style="font-family:serif;">
     <section class="hero is-primary">
   <div class="hero-body">
+    
     <p class="title is-size-1"><b>登録完了</b></p>
     <p class="subtitle is-size-4">Este é um site de piadas. As reivindicações são fictícias</p>
   </div>
 </section>
    
-    <p>　　
-</p>
+    <section class="hero">
+    <div class="hero-body"><div class="notification is-danger">
+            <p class="is-size-3 has-text-centered">
+              残り
+<br>
+              <span id="hour">71</span>時間
+              <span id="min">58</span>分
+              <span id="sec">21</span>秒
+            </p><script type="text/javascript">
+                let time = 259200;
+setInterval(() => {
+    $("#hour").text(Math.floor(time / 3600));
+    $("#min").text(Math.floor((time % 3600) / 60));
+    $("#sec").text(Math.floor(time % 60));
+    time = time - 1;
+   $(function(){  
+  $("#progress").val(time);});
+  },1000)</script>
+            <progress class="progress is-fullwidth" value="259100" max="259200" id="progress">time</progress>
+          </div>
+
 <p>会員登録が正常に完了しました。</p>
-    <p>三日以内に　<img class="text_img" src="https://raw.githubusercontent.com/kitsune1111/kitsune1111.github.io/refs/heads/main/5000tyo-yen.png" style="height:40px;" alt="5000兆円">
+<p>3日以内に　<img class="text_img" src="./登録完了_files/5000tyo-yen.png" style="height:40px;" alt="5000兆円">
 をお支払いください。
-</p><p>お支払いが確認されない場合は<b style="color:red;">法的処置</b>をとらせていただきます。</p>
-<p>誤って登録をされた場合は下のボタンから退会手続きをお願いします。</p><p>　</p>
-<button onclick="a()" class="button is-primary">退会手続きへ</button>
-<script>
-    function a() {
+</p>
+<p>お支払いが確認されない場合は<b style="color:red;">法的処置</b>をとらせていただきます。</p>
+<p>誤って登録をされた場合は下のボタンから退会手続きをお願いします。</p>
+<br><div align="center">
+    <button onclick="a()" class="button is-primary">退会手続きへ</button>
+</div>
+</div></section>
+
+    
+
+
+<script>    function a() {
         while(1)
             {
         alert('知らないリンクは安易に開かないようにしよう。');
             }
     }
-</script><section class="section">
+</script>
+<section></section><section class="section">
     <div class="container">
     <h2 class="title">会員情報</h2>
     <table class="table is-striped is-fullwidth">
     
     <tbody><tr>
-        <td>登録日時</td><td id="date">Fri Sep 13 2024 15:26:16 GMT+0900 (日本標準時)</td>
+        <td>登録日時</td><td id="date">Wed Mar 05 2025 23:59:47 GMT+0900 (日本標準時)</td>
      </tr>
     <tr>
         <td>端末情報</td><td id="device">Win32</td>
     </tr>
-    <tr><td>会員ナンバー</td><td id="number">350849</td></tr>
+    <tr><td>会員ナンバー</td><td id="number">35592</td></tr>
 </tbody></table>    
     </div>
     
 </section>
 
  
-    <script src="jquery-3.6.0.slim.min.js.ダウンロード" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-    <script src="platform.min.js.ダウンロード"></script>
+    <script src="./登録完了_files/jquery-3.6.0.slim.min.js.ダウンロード" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="./登録完了_files/platform.min.js.ダウンロード"></script>
     <script type="text/javascript">　　var date = new Date();
     $(function(){  
     $("#date").text(date);});
@@ -68,6 +97,7 @@
 　　
  
 </script>
+
 
 
   
