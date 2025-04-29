@@ -67,7 +67,7 @@
                  time = time - 1;
                  if (time<0) {
                     time = 180;
-                    alert("ドッキリ大成功！")
+                    alert("デバックすんな\r\nさっさと離れろ");
                  }
                  $(function(){  
                      $("#progress").val(time);
@@ -113,13 +113,24 @@
          var yes = document.getElementById('yes');
          var no = document.getElementById('no');
          var cancel = document.getElementById('cancel');
+         var count = -2
 
          //ボタンがクリックされたらダイアログを表示する
          btn.addEventListener('click', function() {
-             document.getElementById('pop-bg').style.display = 'block';  
+             count = count + 1;
+              if (count==-1) {
+                alert('ちゃんと授業受けた？');
+                document.getElementById('pop-bg').style.display = 'block';  
              dialog.style.display = 'block';
               this.style.display = 'block';
-              alert('ちゃんと授業受けた？')
+              }
+              else if (count==0) {
+                alert("得体のしれない物は触るな\r\nウイルスとか入るぞ");
+             }
+             else {
+                var serifu = "触るなって！\r\nお前の愚行カウント：" + count + "回";
+                alert(serifu);
+             }
          })
 
          //「はい」がクリックされたら
@@ -127,6 +138,9 @@
              alert('そうだね ^^');
              dialog.style.display = 'none';
              document.getElementById('pop-bg').style.display = "none";
+            
+             
+
          });
 
 
@@ -178,7 +192,9 @@
             $(function () {
                 {
              alert('会員登録が正常に完了しました。');
+             var count = -2;
                 }
+             
             })
 
         </script>      
